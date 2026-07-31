@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("background-desktop.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+.pattern {
+    background-image: url("pattern-circle.svg");
+    width: 160px;
+    height: 160px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 300px;
+    right: 220px;
+    background-size: contain;
+    
+}
+.lines {
+    position: fixed;
+    inset: 0;
+    background-image: url("pattern-lines.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}  
+.circle-bottom {
+    background-image: url("pattern-squiggly-line-bottom-desktop.svg");
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
+
+.circle-top {
+    background-image: url("pattern-squiggly-line-top.svg");
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 20px auto;
+    
+    
+
+}
+
+#logo {
+    margin-bottom: 50px;
+    width: 180px;
+}
+#heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 550;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+}
+
+#paragraph {
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 6px;
+    font-family:'Times New Roman', Times, serif;
+    color:  hsl(245, 15%, 58%);
+    margin-bottom: 30px;
+}
+ #email, #full-name, #gitHub {
+    background-color: rgba(255,255,255,0.08);
+    width: 100%;
+    height: 20px;
+    margin: 15px auto;
+    font-size: 18px;
+    font-weight: 100;
+    border: 1.5px solid hsla(252, 69%, 77%, 0.237);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(201, 198, 203, 0.669);
+    padding: 5px;
+}
+#avatar {
+    height: 100px;
+    
+}
+.lines,
+.pattern,
+.circle-top,
+.circle-bottom {
+    pointer-events: none;
+    
+}
+#generate-tick {
+    background-color: hsl(7, 88%, 67%);
+    width: 300px;
+    height: 35px;
+    text-align: center;
+    color: hsl(248, 70%, 10%);
+    border-radius: 10px;
+    font-weight: bold;
+    word-spacing: 2px;
+    border-color: transparent;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+    
+}
+#avatar {
+    display: none;
+}
+.upload-box {
+    width: 100%;
+    height: 120px;
+
+    border: 2px dashed hsl(245, 15%, 58%);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    background-color: rgba(255,255,255,0.08);
+}
+
+
+#ticket-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin:20px auto;
+    
+    
+}
+.ticket {
+    width: 370px;
+    height: 200px;
+    background-image: url("pattern-ticket.svg");
+    border-radius: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+#date {
+    font-size: 12px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    word-spacing: 6px;
+    color: rgb(183, 178, 183);
+}
+
+#user-name {
+        background: linear-gradient(
+        90deg,
+        hsl(7, 88%, 67%),
+        hsl(0, 0%, 100%)
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+#user-email {
+    color: hsl(7, 88%, 67%);
+}
+#para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+    color: rgb(183, 178, 183);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#alerta {
+   background-image: url("icon-info.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    color: rgba(247, 205, 179, 0.539);
+    padding-left: 25px;   
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#alerte {
+       background-image: url("icon-info.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    color: rgba(226, 140, 140, 0.582);
+    padding-left: 25px;   
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#user-info{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+#user-picture{
+    width:70px;
+    height:70px;
+    border-radius:12px;
+    object-fit:cover;
+}
+
+.user-details{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.github{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.github img{
+    width:20px;
+    height:20px;
+}
+
+#user-github{
+    color:hsl(252, 6%, 83%);
+}
